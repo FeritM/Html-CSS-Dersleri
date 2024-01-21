@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <form action="result.html" method="get">
+      <h1>Formlar</h1>
+      <div>
+        <label for="name">isim:</label>
+        <input type="text" id="name" name="Kullanıcı Adı"  placeholder="Lütfen adınızı giriniz"/> <br /><br />
+        <label for="lastname">Soyad:</label>
+        <input type="text" id="lastname" name="Kullanıcı Soyadı" placeholder="Lütfen Soyadınızı giriniz" />
+
+        <br /> <br>
+
+        
+      </div>
+      <div>
+        <label for="password">Şifre</label>
+        <input type="text" id="password" name="Kullanıcı Şifresi" placeholder="Lütfen şifrenizi giriniz"> <br></br>
+        <label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="Kullanıcı E-mail" placeholder="Lütfen E-mailinizi giriniz"> <br> <br>
+
+        <label for="age">Yaşınız</label>
+        <input type="number" name="Kullanıcı yaşı" id="age" placeholder="Yaş" min="18" max="45">
+      </div> 
+     
+       <div>
+        <p>Gender:</p>
+        <label for="gender1">Male</label>
+        <input type="radio" id="gender1" name="Kullanıcı cinsiyeti" >  <br> <br>
+        <label for="gender2">Female</label>
+        <input type="radio" id="gender2" name="Kullanıcı cinsiyeti" > <br>
+
+        <p>Favori hayvan türünüz hangisidir?</p>
+
+        <input type="checkbox" id="kedi" name="Favori hayvanınız kedi">
+        <label for="kedi">Kedi</label> 
+
+        <input type="checkbox" id="köpek" name="Favori hayvanınız köpek">
+        <label for="köpek">Köpek</label>
+
+        <input type="checkbox" id="panda" name="Favori hayvanınız panda">
+        <label for="panda">Panda</label>
+
+        <input type="checkbox" id="kuş" name="Favori hayvanınız kuş">
+        <label for="kuş">Kuş</label>
+        
+
+
+        </div> <br><br><br><br>
+        <input type="submit" value="Gönder" />
+    </form>
+  </body>
+</html>
