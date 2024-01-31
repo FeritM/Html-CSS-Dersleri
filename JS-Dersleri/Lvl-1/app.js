@@ -51,7 +51,7 @@
 // }else{
 //   alert("yalnış yol seçtiniz!!!!")
 // }
-// // let sayi1 = +prompt("0-100 arasında bir sayı giriniz")
+// let sayi1 = +prompt("0-100 arasında bir sayı giriniz")
 
 // while (sayi1<0 || sayi1>100) {
 //     console.log("Girilen sayı 0-100 arasında olmalıdır");
@@ -134,5 +134,82 @@
 // if(sayı%2==1){
 
 // }
+//* ÇOKLU İF KULLANIMI
+//?Örnek1
+//* Adını ve tck yaz ad :bos gecılmez tck :11 hane olsun
+
+// let ad =prompt("İsminizi giriniz")
+// let tckn = prompt("Lütfen TCKN doğru şekilde giriniz")
+
+// kontrolEt(ad,tckn)
+
+// function kontrolEt(ad,tckn){
+//   if(ad!==""){
+//     if (tckn.length==11) {
+//       console.log("isim ve tckn problemsiz girildi");
+      
+//     }else{
+//       console.log("Lütfen tcnizi 11 karakter olarak giriniz");
+
+//     }
+
+//   }else 
+//   console.log("Lütfen isim alanını boş bırakmayınız");
+// }
+//?ÖRNEK2
+
+// kontrolEt2(ad,tckn)
+
+// function kontrolEt2(ad,tckn) {
+//   if (ad=="") {
+//     console.log("Lütfen isim alanınızı boş bırakmayınız");
+//     return
+//   }
+//   if (tckn.length!=11) {
+//     console.log("Lütfen TCKN 11 hane olarak giriniz");
+//     return;
+//   }
+//   console.log("isim ve tcniz problemsiz girildi");
+  
+// }
+
+//! Örnek 3 Beden Kitle Endeksi Bulmak
+
+
+let kg=Number(prompt("Lütfen kilonuzu giriniz"))
+let boy =Number(prompt("Lütfen boyunuzu giriniz"))
+let sonuc = kg/(boy*2)
+
+if (boy<=0 || kg<=0){
+  console.log("Negatif ifade kullanamazsınız");
+}
+
+
+else if (sonuc <18.5 && sonuc>14 ) {
+  console.log("ideal kilonuzun altındasınız");
+  
+} else  if (sonuc>=18.5 &&  sonuc <= 24.9 ){
+  console.log("İdeal kilodasınız");
+  
+}else if (sonuc>25 &&sonuc<=39.9){
+  console.log("İdeal kilonun üstündesiniz");
+}else if(sonuc>40){
+  console.log("Obezsiniz");
+}
+else if(sonuc<14){
+  console.log("Yaşamsal faaliyetleriniz tehlike altındadır");
+}
+else {
+  console.log("Yanlış ifade kullandınız");
+}
+
+
+
+
+
+
+
+
+
 
   
