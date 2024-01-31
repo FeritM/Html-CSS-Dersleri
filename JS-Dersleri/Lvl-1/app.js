@@ -38,18 +38,101 @@
 //     console.log("YANLIŞ SAYI GRİDİNİZ");
 // }
 
-let secilenYol = prompt("gitmek istediğiniz yolu seçiniz");
-if (secilenYol == 1){
-  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
-  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
-}else if (secilenYol == 2){
-  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
-  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
-}else if (secilenYol == 3){
-  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
-  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
-}else{
-  alert("yalnış yol seçtiniz!!!!")
-}
+// let secilenYol = prompt("gitmek istediğiniz yolu seçiniz");
+// if (secilenYol == 1){
+//   alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+//   console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+// }else if (secilenYol == 2){
+//   alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+//   console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+// }else if (secilenYol == 3){
+//   alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+//   console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+// }else{
+//   alert("yalnış yol seçtiniz!!!!")
+// }
+// // let sayi1 = +prompt("0-100 arasında bir sayı giriniz")
+
+// while (sayi1<0 || sayi1>100) {
+//     console.log("Girilen sayı 0-100 arasında olmalıdır");
+//     sayi1=+prompt("0-100 arasında bir sayı giriniz")
+    
+// }
+
+
+// for (let i = 0; i <= 10; i=i+2) {
+//     console.log(i);
+//     if (i>5) {console.log(
+//       "i sayısı 5 ten büyüktür"
+//     );
+      
+//     }
+    
+// }
+//  for(let i=1 ; i<=10;i++){
+//     if(i%2==1){
+//         console.log("Enes");
+//     }else{
+//         console.log("Naber");
+//     }
+//  }
+// let toplam =0
+//  for(let i = 50 ; i>=1; i--){ 
+//     toplam=toplam +i
+//     console.log(i);
+
+//  }
+//  console.log("Toplam : " ,toplam);
+
+// let sayac =1
+// while (sayac<=15) {
+//     console.log(sayac);
+
+//     sayac++
+    
+// }
+// let sayac2 =1
+// while (sayac2<=19) {
+//     if(sayac2%2==0){console.log(sayac2);}
+//     sayac2++
+    
+    
+// }
+// let sayac3 =1
+// while (sayac3<=19) {
+//     if(sayac3%2==1){console.log(sayac3);}
+//     sayac3++
+// }
+
+// let sayac4 =1
+// while (true)
+//  {console.log(sayac4);
+//     if (sayac4==7) {
+//         break;
+//     }    sayac4++
+// }
+
+// let sayac=1
+// do {
+//     console.log(sayac);
+//     sayac++
+    
+// } while (sayac<=10);
+
+//? 1 den 20 ye kadar olan tek sayıların toplamı
+
+// let sayı=1
+// let toplam=0
+
+
+// do {
+//     console.log("1 den 20 ye kadar olan tek sayıların toplamı");
+    
+
+// } while (sayı<=20);
+// sayı++
+// if(sayı%2==1){
+
+// }
 
   
