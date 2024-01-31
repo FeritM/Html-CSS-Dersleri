@@ -176,40 +176,75 @@
 //! Örnek 3 Beden Kitle Endeksi Bulmak
 
 
-let kg=Number(prompt("Lütfen kilonuzu giriniz"))
-let boy =Number(prompt("Lütfen boyunuzu giriniz"))
-let sonuc = kg/(boy*2)
+// let kg=Number(prompt("Lütfen kilonuzu giriniz"))
+// let boy =Number(prompt("Lütfen boyunuzu giriniz"))
+// let sonuc = kg/(boy*2)
 
-if (boy<=0 || kg<=0){
-  console.log("Negatif ifade kullanamazsınız");
-}
+// if (boy<=0 || kg<=0){
+//   console.log("Negatif ifade kullanamazsınız");
+// }
 
 
-else if (sonuc <18.5 && sonuc>14 ) {
-  console.log("ideal kilonuzun altındasınız");
+// else if (sonuc <18.5 && sonuc>14 ) {
+//   console.log("ideal kilonuzun altındasınız " + sonuc);
   
-} else  if (sonuc>=18.5 &&  sonuc <= 24.9 ){
-  console.log("İdeal kilodasınız");
+// } else  if (sonuc>=18.5 &&  sonuc <= 24.9 ){
+//   console.log("İdeal kilodasınız " + sonuc);
   
-}else if (sonuc>25 &&sonuc<=39.9){
-  console.log("İdeal kilonun üstündesiniz");
-}else if(sonuc>40){
-  console.log("Obezsiniz");
-}
-else if(sonuc<14){
-  console.log("Yaşamsal faaliyetleriniz tehlike altındadır");
-}
-else {
-  console.log("Yanlış ifade kullandınız");
-}
+// }else if (sonuc>25 &&sonuc<=39.9){
+//   console.log("İdeal kilonun üstündesiniz " + sonuc);
+// }else if(sonuc>40){
+//   console.log("Obezsiniz");
+// }
+// else if(sonuc<14){
+//   console.log("Yaşamsal faaliyetleriniz tehlike altındadır " + sonuc);
+// }
+// else {
+//   console.log("Yanlış ifade kullandınız " + sonuc);
+// }
 
+//! ÖRNEK 4
 
+let Dizel = 24.53
+let Benzin = 22.25
+let LPG=11.1
 
+const yeniSatir =" \r\n"
 
+const yakitMetni = "Yakıt Türünü Seçiniz" +yeniSatir
++ "1-Dizel"+yeniSatir
++"2-Benzin" +yeniSatir
++"3-LPG"
 
+prompt(yakitMetni)
+let bakiye = Number(prompt("Bakiyenizi giriniz"))
 
+let yakitTipi = prompt(yakitMetni)
+let yakıtLitresi=Number(prompt("Yakıt litresini giriniz"))
 
+if(yakitTipi =="1"){
+  //Dizel
+  let odenecekTutar = dizel*yakıtLitresi
+  if(odenecekTutar<bakiye){
+    alert("Dizel alma işlemi başarılıdır" +yeniSatir
+    +"Kalan bakiye :" + (bakiye-odenecekTutar))
+  }else{
+    alert("Bakiyeniz yeterli değildir"+yeniSatir
+    +"Ödenecek tutar : " + odenecekTutar+yeniSatir
+    +"Bakiye : " + bakiye+yeniSatir
+    +"Eksik Tutar : " + (odenecekTutar-bakiye))
+  }
+}else if(yakitTipi=="2"){
+  //Benzin
+  let odenecekTutar= Benzin*yakıtLitresi
+  if(odenecekTutar<bakiye){
+    alert("Benzin alım işleminiz başarılıdır" +yeniSatir+"Kalan bakiye : " +(bakiye-odenecekTutar))
 
+  }else{
+    alert("Bakiyeniz yeterli değildir" +yeniSatir+"Ödenecek tutar : " +odenecekTutar
+    +yeniSatir+"Bakiye:" +bakiye)+yeniSatir+"Eksik tutar :" +(odenecekTutar-bakiye)
 
-
-  
+  }
+}else if(yakitTipi=="3"){
+  //LPG
+}else{alert("Lütfen geçerli bir yakit türü seçiniz")}
