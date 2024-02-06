@@ -36,12 +36,17 @@ let sayilar = [0, 1, 2, "Enes", 3, 4, 5, 6, 7, 8, 9, "Ali"];
 
 console.log(sayilar[15]); //?Undifened döndü
 
-sayilar[10] = "Mehmet";
-console.log(sayilar[10]);
+// sayilar[10] = "Mehmet";
+// console.log(sayilar[10]);
 
 let isimler = ["Enes", "Ferit", "Yakup", "Hilal"];
 
 console.log(isimler);
 
-isimler[2] = "Yavuz";
-console.log(isimler);
+// isimler[2] = "Yavuz";
+// console.log(isimler);
+
+
+isimler.forEach(function(isim){
+    console.log(isim);
+})
