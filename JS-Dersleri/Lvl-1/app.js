@@ -268,6 +268,17 @@ if (yakitTipi == "1") {
   }
 } else if (yakitTipi == "3") {
   //LPG
+
+    let odenecekTutar=LPG*yakıtLitresi
+    if(odenecekTutar<=bakiye){
+      alert("Benzin alma işleminiz başarılıdır"+ 
+      yeniSatir + "Kalan Bakiye : " + (bakiye-odenecekTutar))
+    }else{ alert("Bakiyeniz yeterli değildir" + yeniSatir+
+     "Ödenecek tutar : " + odenecekTutar + yeniSatir+"Bakiye:" + bakiye
+    ) + yeniSatir+"Eksik tutar : " + (odenecekTutar-bakiye)
+
+
+    }
 } else {
   alert("Lütfen geçerli bir yakit türü seçiniz");
 }
