@@ -1,6 +1,5 @@
 //             Ders ortalaması bulmak
 
-
 // let vize1 = Number(prompt("Vize 1 notunuzu giriniz :"))
 // let vize2 = Number(prompt("Vize 2 notunuzu giriniz :"))
 
@@ -18,7 +17,6 @@
 // }
 
 // let sayi1 = Number(prompt("Ders notunuzu giriniz : "))
-
 
 // if  ( sayi1>=90 && sayi1<=100) {
 //   console.log("Tebrikler A notu ile geçtiniz");
@@ -56,18 +54,17 @@
 // while (sayi1<0 || sayi1>100) {
 //     console.log("Girilen sayı 0-100 arasında olmalıdır");
 //     sayi1=+prompt("0-100 arasında bir sayı giriniz")
-    
-// }
 
+// }
 
 // for (let i = 0; i <= 10; i=i+2) {
 //     console.log(i);
 //     if (i>5) {console.log(
 //       "i sayısı 5 ten büyüktür"
 //     );
-      
+
 //     }
-    
+
 // }
 //  for(let i=1 ; i<=10;i++){
 //     if(i%2==1){
@@ -77,7 +74,7 @@
 //     }
 //  }
 // let toplam =0
-//  for(let i = 50 ; i>=1; i--){ 
+//  for(let i = 50 ; i>=1; i--){
 //     toplam=toplam +i
 //     console.log(i);
 
@@ -89,14 +86,13 @@
 //     console.log(sayac);
 
 //     sayac++
-    
+
 // }
 // let sayac2 =1
 // while (sayac2<=19) {
 //     if(sayac2%2==0){console.log(sayac2);}
 //     sayac2++
-    
-    
+
 // }
 // let sayac3 =1
 // while (sayac3<=19) {
@@ -116,7 +112,7 @@
 // do {
 //     console.log(sayac);
 //     sayac++
-    
+
 // } while (sayac<=10);
 
 //? 1 den 20 ye kadar olan tek sayıların toplamı
@@ -124,10 +120,8 @@
 // let sayı=1
 // let toplam=0
 
-
 // do {
 //     console.log("1 den 20 ye kadar olan tek sayıların toplamı");
-    
 
 // } while (sayı<=20);
 // sayı++
@@ -147,13 +141,13 @@
 //   if(ad!==""){
 //     if (tckn.length==11) {
 //       console.log("isim ve tckn problemsiz girildi");
-      
+
 //     }else{
 //       console.log("Lütfen tcnizi 11 karakter olarak giriniz");
 
 //     }
 
-//   }else 
+//   }else
 //   console.log("Lütfen isim alanını boş bırakmayınız");
 // }
 //?ÖRNEK2
@@ -170,11 +164,10 @@
 //     return;
 //   }
 //   console.log("isim ve tcniz problemsiz girildi");
-  
+
 // }
 
 //! Örnek 3 Beden Kitle Endeksi Bulmak
-
 
 // let kg=Number(prompt("Lütfen kilonuzu giriniz"))
 // let boy =Number(prompt("Lütfen boyunuzu giriniz"))
@@ -184,13 +177,12 @@
 //   console.log("Negatif ifade kullanamazsınız");
 // }
 
-
 // else if (sonuc <18.5 && sonuc>14 ) {
 //   console.log("ideal kilonuzun altındasınız " + sonuc);
-  
+
 // } else  if (sonuc>=18.5 &&  sonuc <= 24.9 ){
 //   console.log("İdeal kilodasınız " + sonuc);
-  
+
 // }else if (sonuc>25 &&sonuc<=39.9){
 //   console.log("İdeal kilonun üstündesiniz " + sonuc);
 // }else if(sonuc>40){
@@ -205,46 +197,77 @@
 
 //! ÖRNEK 4
 
-let Dizel = 24.53
-let Benzin = 22.25
-let LPG=11.1
+let Dizel = 24.53;
+let Benzin = 22.25;
+let LPG = 11.1;
 
-const yeniSatir =" \r\n"
+const yeniSatir = " \r\n";
 
-const yakitMetni = "Yakıt Türünü Seçiniz" +yeniSatir
-+ "1-Dizel"+yeniSatir
-+"2-Benzin" +yeniSatir
-+"3-LPG"
+const yakitMetni =
+  "Yakıt Türünü Seçiniz" +
+  yeniSatir +
+  "1-Dizel" +
+  yeniSatir +
+  "2-Benzin" +
+  yeniSatir +
+  "3-LPG";
 
-prompt(yakitMetni)
-let bakiye = Number(prompt("Bakiyenizi giriniz"))
+prompt(yakitMetni);
+let bakiye = Number(prompt("Bakiyenizi giriniz"));
 
-let yakitTipi = prompt(yakitMetni)
-let yakıtLitresi=Number(prompt("Yakıt litresini giriniz"))
+let yakitTipi = prompt(yakitMetni);
+let yakıtLitresi = Number(prompt("Yakıt litresini giriniz"));
 
-if(yakitTipi =="1"){
+if (yakitTipi == "1") {
   //Dizel
-  let odenecekTutar = dizel*yakıtLitresi
-  if(odenecekTutar<bakiye){
-    alert("Dizel alma işlemi başarılıdır" +yeniSatir
-    +"Kalan bakiye :" + (bakiye-odenecekTutar))
-  }else{
-    alert("Bakiyeniz yeterli değildir"+yeniSatir
-    +"Ödenecek tutar : " + odenecekTutar+yeniSatir
-    +"Bakiye : " + bakiye+yeniSatir
-    +"Eksik Tutar : " + (odenecekTutar-bakiye))
+  let odenecekTutar = dizel * yakıtLitresi;
+  if (odenecekTutar < bakiye) {
+    alert(
+      "Dizel alma işlemi başarılıdır" +
+        yeniSatir +
+        "Kalan bakiye :" +
+        (bakiye - odenecekTutar)
+    );
+  } else {
+    alert(
+      "Bakiyeniz yeterli değildir" +
+        yeniSatir +
+        "Ödenecek tutar : " +
+        odenecekTutar +
+        yeniSatir +
+        "Bakiye : " +
+        bakiye +
+        yeniSatir +
+        "Eksik Tutar : " +
+        (odenecekTutar - bakiye)
+    );
   }
-}else if(yakitTipi=="2"){
+} else if (yakitTipi == "2") {
   //Benzin
-  let odenecekTutar= Benzin*yakıtLitresi
-  if(odenecekTutar<bakiye){
-    alert("Benzin alım işleminiz başarılıdır" +yeniSatir+"Kalan bakiye : " +(bakiye-odenecekTutar))
-
-  }else{
-    alert("Bakiyeniz yeterli değildir" +yeniSatir+"Ödenecek tutar : " +odenecekTutar
-    +yeniSatir+"Bakiye:" +bakiye)+yeniSatir+"Eksik tutar :" +(odenecekTutar-bakiye)
-
+  let odenecekTutar = Benzin * yakıtLitresi;
+  if (odenecekTutar < bakiye) {
+    alert(
+      "Benzin alım işleminiz başarılıdır" +
+        yeniSatir +
+        "Kalan bakiye : " +
+        (bakiye - odenecekTutar)
+    );
+  } else {
+    alert(
+      "Bakiyeniz yeterli değildir" +
+        yeniSatir +
+        "Ödenecek tutar : " +
+        odenecekTutar +
+        yeniSatir +
+        "Bakiye:" +
+        bakiye
+    ) +
+      yeniSatir +
+      "Eksik tutar :" +
+      (odenecekTutar - bakiye);
   }
-}else if(yakitTipi=="3"){
+} else if (yakitTipi == "3") {
   //LPG
-}else{alert("Lütfen geçerli bir yakit türü seçiniz")}
+} else {
+  alert("Lütfen geçerli bir yakit türü seçiniz");
+}
